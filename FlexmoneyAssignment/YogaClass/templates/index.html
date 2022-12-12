@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum_scale=1.0">
+</head>
+<body>
+
+    <div class="Container">
+        <div class="Contect-box">
+            <div class="right"></div>
+            <div class="boootm-sapce">
+                <h2>Add User Details</h2>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <input type="text" class="field" placeholder="Name" name="name">
+                    <input type="email" class="field" placeholder="Email" name="email">
+                    <input type="number" class="field" placeholder="Age" name="age">
+                    <input type="text" class="field" placeholder="BatchType" name="batchType">
+                    <button t   ype="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
